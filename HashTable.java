@@ -24,7 +24,7 @@ class HashTable<K, V> {
         this.capacity = M;
         size = 0;
 
-        // Create empty chains
+      
         for (int i = 0; i < capacity; i++)
             hashArray.add(null);
     }
@@ -51,7 +51,7 @@ class HashTable<K, V> {
             n = n.next;
         }
 
-        // collision
+    
         size++;
         n = hashArray.get(index);
         HashNode<K, V> newNode = new HashNode<K, V>(key, value, hashCode);
